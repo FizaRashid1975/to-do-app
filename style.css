@@ -1,0 +1,202 @@
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+#date-time {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#new-task {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Stylish font family */
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #0c0c0c; /* Dark background for container */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(243, 227, 6, 0.5); /* Neon cyan glow */
+}
+
+h1 {
+    color: #00ffff; /* Neon cyan color for heading */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #333; /* Dark input background */
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(236, 240, 6, 0.5); /* Neon cyan glow */
+}
+
+input[type="text"]::placeholder {
+    color: #ccc; /* Lighter placeholder color */
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+button {
+    background-color: #87ceeb; /* Sky blue button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 10px; /* Added space between input and button */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon cyan glow */
+}
+
+button:hover {
+    background-color: #5f9ea0; /* Darker sky blue on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #222; /* Dark list item background */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px; /* Added space between list items */
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon cyan glow */
+    position: relative;
+}
+
+li:hover {
+    outline: 2px solid rgba(185, 185, 174, 0.5); /* Neon cyan outline on hover */
+}
+
+.complete-btn, .delete-btn {
+    background-color: #eaee05; /* Sky blue button background */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 10px; /* Added space between buttons */
+    box-shadow: 0 0 10px rgba(231, 235, 6, 0.5); /* Neon cyan glow */
+}
+
+.complete-btn:hover, .delete-btn:hover {
+    background-color: #5f9ea0; /* Darker sky blue on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red delete button */
+    margin-left: 5px; /* Adjusted space for delete button */
+}
+
+.complete-btn::before {
+    content: '\2713'; /* Checkmark symbol */
+}
+
+.delete-btn::before {
+    content: '\2715'; /* Multiplication X symbol */
+}
+
+.complete-btn:hover::before, .delete-btn:hover::before {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.complete-btn.disabled {
+    background-color: #6c757d; /* Gray disabled button */
+    cursor: default;
+}
+
+.complete-btn.disabled::before {
+    transform: scale(1); /* Reset scale for disabled state */
+}
+
+.delete-btn.disabled {
+    background-color: #6c757d; /* Gray disabled button */
+    cursor: default;
+}
+
+.delete-btn.disabled::before {
+    transform: scale(1); /* Reset scale for disabled state */
+}
+
+.complete-btn.disabled:hover, .delete-btn.disabled:hover {
+    background-color: #6c757d; /* Gray background on hover for disabled buttons */
+}
